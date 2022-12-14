@@ -16,7 +16,7 @@ public class Excel implements ExcelWriter, ExcelReader {
             excelWriter = new XlsxWriter(filePath);
             excelReader = new XlsxReader(filePath);
         }
-        valid = (excelWriter != null && excelReader != null) ? true : false;
+        valid = excelReader != null;
     }
 
     public Boolean getValid() {

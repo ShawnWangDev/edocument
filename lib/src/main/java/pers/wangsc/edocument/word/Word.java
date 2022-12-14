@@ -19,7 +19,7 @@ public class Word {
             wordReader = new DocxReader(filePath);
             wordWriter = new DocxWriter(filePath);
         }
-        valid = (wordReader != null && wordWriter != null) ? true : false;
+        valid = wordReader != null;
     }
 
     public List<String> getTableContent(int tableAt, int[] locations) {
